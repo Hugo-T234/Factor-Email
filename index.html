@@ -37,6 +37,25 @@
     p {
         padding: 0.1em 2.8em;
     }
+    .order-header {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 1.5em;
+    }
+    .order-details {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 21px;
+    }
+    .order-details td:nth-child(1) {
+        width: 300px;
+        padding: 0.5em 0 0 4em;
+        margin-top: 2em;
+    }
 </style>
 </head>
 <body>
@@ -65,6 +84,52 @@
                 </td>
             </tr>
 <!-- Order Details -->
+            <tr>
+                <td>
+                    <p class="order-header">Upcoming order details</p>
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <table class="order-details">
+                                    <tr>
+                                        <td>Classic - 14 meals</td>
+                                        <td>$160.86</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-weight: normal;">Classic Box</td>
+                                    </tr>
+                                    <tr class="tr-test">
+                                        <td>Shipping</td>
+                                        <td>$10.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>First Order Shipping Discount</td>
+                                        <td>$10.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sales Tax</td>
+                                        <td>$12.86</td>
+                                    </tr>
+                                </table>
+                                <hr style="width: 80%">
+                                <table class="order-details">
+                                    <tr>
+                                        <td style="text-transform: uppercase;">First order total</td>
+                                        <td>$173.72</td>
+                                    </tr>
+                                </table>
+                                <hr noshade style="width: 80%; border-width: 1px;">
+                                <table class="order-details">
+                                    <tr>
+                                        <td style="text-transform: uppercase;">Recurring order total*</td>
+                                        <td>$184.71</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
 <!-- Delivery Information -->
 <!-- Summary -->
 <!-- Banner Image #2 -->
